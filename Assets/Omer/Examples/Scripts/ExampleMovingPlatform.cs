@@ -30,10 +30,13 @@ namespace KinematicCharacterController.Examples
 
         public void UpdateMovement(out Vector3 goalPosition, out Quaternion goalRotation, float deltaTime)
         {
-            goalPosition = (_originalPosition + (TranslationAxis.normalized * Mathf.Sin(Time.time * TranslationSpeed) * TranslationPeriod));
+            // Use Mathf.Abs to ensure movement stays above the original position
+            float verticalOffset = Mathf.Abs(Mathf.Sin(Time.time * TranslationSpeed)) * TranslationPeriod;
+            goalPosition = _originalPosition + (TranslationAxis.normalized * verticalOffset);
 
             Quaternion targetRotForOscillation = Quaternion.Euler(OscillationAxis.normalized * (Mathf.Sin(Time.time * OscillationSpeed) * OscillationPeriod)) * _originalRotation;
             goalRotation = Quaternion.Euler(RotationAxis * RotSpeed * Time.time) * targetRotForOscillation;
         }
+
     }
 }
