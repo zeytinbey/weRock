@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 22c5c8cb561d7874caa81c09546e626c
+DefaultImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 7271
+  packageName: Mesh to Terrain
+  packageVersion: 2.5.2
+  assetPath: Assets/Infinity Code/MeshToTerrain/Example/Scene/Example.unity
+  uploadId: 722619

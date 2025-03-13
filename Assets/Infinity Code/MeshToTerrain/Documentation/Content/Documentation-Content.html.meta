@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 496c0643dade1da4aad7f75fe54eee38
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 7271
+  packageName: Mesh to Terrain
+  packageVersion: 2.5.2
+  assetPath: Assets/Infinity Code/MeshToTerrain/Documentation/Content/Documentation-Content.html
+  uploadId: 722619

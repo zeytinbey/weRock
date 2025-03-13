@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 30d249d37e11dc84f96dc1b69b659595
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 7271
+  packageName: Mesh to Terrain
+  packageVersion: 2.5.2
+  assetPath: Assets/Infinity Code/MeshToTerrain/Scripts/Editor/MeshToTerrain.cs
+  uploadId: 722619
