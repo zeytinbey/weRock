@@ -87,6 +87,8 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
             characterInputs.CrouchDown = Input.GetKeyDown(KeyCode.C);
             characterInputs.CrouchUp = Input.GetKeyUp(KeyCode.C);
             characterInputs.ClimbLadder = Input.GetKeyUp(KeyCode.E);
+            characterInputs.DashDown = Input.GetKeyDown(KeyCode.LeftShift);
+
 
             // Apply inputs to character
             Character.SetInputs(ref characterInputs);
