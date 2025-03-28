@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Trambolin
   - Enemy
+  - Collectible
   layers:
   - Default
   - TransparentFX
