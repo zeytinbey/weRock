@@ -7251,7 +7251,7 @@ MonoBehaviour:
   alpha_particleHuge: 0.05
   manualModeIntroText: 0
   introTextContent: We Rock
-  sceneToLoad: level
+  sceneToLoad: SampleScene
   delayBeforeLoading: 1
   manualModeTexts: 0
   play: PLAY
