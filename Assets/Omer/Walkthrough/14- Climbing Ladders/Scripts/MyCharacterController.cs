@@ -395,10 +395,18 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
                                     currentRotation = _activeLadder.transform.rotation;
                                 }
                                 break;
+
                             case ClimbingState.Anchoring:
                             case ClimbingState.DeAnchoring:
                                 float anchorT = Mathf.Clamp01(_anchoringTimer / AnchoringDuration);
                                 currentRotation = Quaternion.Slerp(_anchoringStartRotation, _ladderTargetRotation, anchorT);
+
+                                // Eðer de-anchoring sona ermiþse rotasyonu sabitle
+                                if (_anchoringTimer >= AnchoringDuration && _climbingState == ClimbingState.DeAnchoring)
+                                {
+                                    currentRotation = _rotationBeforeClimbing;
+                                }
+
                                 break;
                         }
                         break;
@@ -528,7 +536,8 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
                             case ClimbingState.Climbing:
                                 if (_activeLadder)
                                 {
-                                    currentVelocity = (_ladderUpDownInput * _activeLadder.transform.up).normalized * ClimbingSpeed;
+                                    Vector3 climbDirection = _activeLadder.WorldClimbDirection;
+                                    currentVelocity = (_ladderUpDownInput * climbDirection).normalized * ClimbingSpeed;
                                 }
                                 break;
                             case ClimbingState.Anchoring:
