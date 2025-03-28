@@ -41,6 +41,10 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
 
         private Animator _animator;
 
+        public AudioClip dashSound;
+        public AudioClip jumpSound;
+        private AudioSource audioSource;
+        private bool _dashSoundPlayed = false;
 
         private bool _controlsDisabled = false;
         private float _controlsDisabledUntil = 0f;
@@ -57,7 +61,8 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
 
         [Header("Explosion/Enemy Hit Settings")]
         public float ExplosionImpulse = 20f; // Dilediðiniz þiddet deðeri
-
+        [Header("Explosion/Enemy2 Hit Settings")]
+        public float ExplosionImpulse2 = 40f; // Dilediðiniz þiddet deðeri
 
 
         [Header("Stable Movement")]
@@ -158,6 +163,8 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
 
             // Ýlk durum Default olsun
             TransitionToState(CharacterState.Default);
+
+            audioSource = GetComponent<AudioSource>();
         }
 
         /// <summary> State deðiþimi </summary>
@@ -425,10 +432,20 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
                         {
                             currentVelocity = _dashDirection * DashSpeed;
                             _dashTimeLeft -= deltaTime;
+
+                            // >>>>>> Dash sesini sadece bir kere çal
+                            if (!_dashSoundPlayed && dashSound != null)
+                            {
+                                audioSource.PlayOneShot(dashSound);
+                                _dashSoundPlayed = true;
+                            }
+
                             if (_dashTimeLeft <= 0f)
                             {
                                 _isDashing = false;
+                                _dashSoundPlayed = false; // sonraki dash için sýfýrla
                             }
+
                             return; // dash bitene kadar normal hareketi pas geç
                         }
 
@@ -464,6 +481,8 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
                             currentVelocity += Gravity * deltaTime;
                             currentVelocity *= (1f / (1f + (Drag * deltaTime)));
                         }
+
+                        
 
                         // Jump
                         {
@@ -501,8 +520,14 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
                                     _jumpRequested = false;
                                     _jumpConsumed = true;
                                     _jumpedThisFrame = true;
+
+                                    if (jumpSound != null)
+                                    {
+                                        audioSource.PlayOneShot(jumpSound);
+                                    }
                                 }
                             }
+                          
                             _canWallJump = false;
                         }
 
@@ -701,7 +726,20 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
                 AddVelocity(pushDirection * impulse);
                 Debug.Log("Enemy çarpýþmasý: Uygulanan impulse = " + (pushDirection * impulse));
             }
+            if (hitCollider.CompareTag("Enemy2"))
+            {
+                // Ground solving’i geçici kapatýn
+                _controlsDisabled = true;
+                _controlsDisabledUntil = Time.time + 1f;
+                Debug.Log("Enemy çarpmasý: Kontroller 1 saniyeliðine devre dýþý býrakýldý.");
 
+                Motor.ForceUnground(0.5f);  // ForceUnground süresini de artýrýn
+
+                Vector3 pushDirection = (hitNormal).normalized;
+                float impulse = ExplosionImpulse;
+                AddVelocity(pushDirection * impulse);
+                Debug.Log("Enemy çarpýþmasý: Uygulanan impulse = " + (pushDirection * impulse));
+            }
 
 
             switch (CurrentCharacterState)
