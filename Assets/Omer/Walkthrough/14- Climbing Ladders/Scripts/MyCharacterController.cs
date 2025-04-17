@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using KinematicCharacterController;
 using System;
+using UnityEngine.UI;
 
 namespace KinematicCharacterController.Walkthrough.ClimbingLadders
 {
@@ -150,6 +151,7 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
         private float _lastDashTime = -999f;
         private Vector3 _dashDirection = Vector3.zero;
 
+        public Slider hPBar;
         private void Start()
         {
 
@@ -166,7 +168,7 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
 
             audioSource = GetComponent<AudioSource>();
         }
-
+  
         /// <summary> State deðiþimi </summary>
         public void TransitionToState(CharacterState newState)
         {
