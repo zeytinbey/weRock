@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InteractUIController : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class InteractUIController : MonoBehaviour
     private Transform player;
 
     private bool isPlayerInRange = false;
+    public Button hatButton;
+    public Button cigaretteButton;
 
     void Start()
     {
@@ -16,8 +19,45 @@ public class InteractUIController : MonoBehaviour
 
     void Update()
     {
+        
+        
+        
+        
         float distance = Vector3.Distance(transform.position, player.position);
         isPlayerInRange = distance <= interactionDistance;
+
+
+
+
+        // Eðer "1" tuþuna basýldýysa
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            // Butonun click event'ini tetikle
+            if (hatButton != null)
+            {
+                hatButton.onClick.Invoke();
+                Debug.Log("1 tuþuna basýldý, buton tetiklendi.");
+            }
+            else
+            {
+                Debug.LogWarning("targetButton atanmamýþ!");
+            }
+        }
+        // Eðer "2" tuþuna basýldýysa
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            // Butonun click event'ini tetikle
+            if (cigaretteButton != null)
+            {
+                cigaretteButton.onClick.Invoke();
+                Debug.Log("2 tuþuna basýldý, buton tetiklendi.");
+            }
+            else
+            {
+                Debug.LogWarning("targetButton atanmamýþ!");
+            }
+        }
+
 
         if (interactionPanel.activeSelf && Input.GetKeyDown(KeyCode.Escape))
         {
@@ -25,6 +65,7 @@ public class InteractUIController : MonoBehaviour
             ClosePanel();
         }
 
+       
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             OpenPanel();
@@ -34,9 +75,9 @@ public class InteractUIController : MonoBehaviour
     void OpenPanel()
     {
         interactionPanel.SetActive(true);
+        
         Time.timeScale = 0f; // Oyun devam etsin
-        Cursor.lockState = CursorLockMode.None; // Fare serbest kalsýn
-        Cursor.visible = true;
+
     }
 
     public void ClosePanel()
