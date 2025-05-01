@@ -446,5 +446,10 @@ namespace Zenject
 
             return null;
         }
+
+        public void Subscribe<T>()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
