@@ -9,9 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8981647645175325136}
+  - component: {fileID: 4163076309342239876}
+  - component: {fileID: 3781835966637853490}
+  - component: {fileID: 7843385343708052472}
   m_Layer: 0
-  m_Name: Cactus
-  m_TagString: Enemy
+  m_Name: cactus
+  m_TagString: Kaktus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +35,75 @@ Transform:
   - {fileID: 8999205160994889607}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4163076309342239876
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919019605837642322}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.512287
+  m_Height: 4.9454327
+  m_Direction: 1
+  m_Center: {x: 0.008460999, y: 2.4944472, z: 0}
+--- !u!136 &3781835966637853490
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919019605837642322}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.44403723
+  m_Height: 1.4963183
+  m_Direction: 1
+  m_Center: {x: -1.0956693, y: 3.1800606, z: 0.011008948}
+--- !u!136 &7843385343708052472
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919019605837642322}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.42350417
+  m_Height: 1.4167333
+  m_Direction: 1
+  m_Center: {x: 1.1120702, y: 2.9805572, z: -0.0076167583}
 --- !u!1001 &8891009332391953978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86,7 +158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4715490987411214384, guid: 169648dfc8ff85c48ae20a3feb85b22e, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Kaktus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

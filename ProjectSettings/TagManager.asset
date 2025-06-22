@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Collectible
   - Enemy2
+  - Kaktus
+  - Br
   layers:
   - Default
   - TransparentFX

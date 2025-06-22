@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 354389553448362456}
+  - component: {fileID: 151233610592429572}
   m_Layer: 0
-  m_Name: Cacti
-  m_TagString: Enemy
+  m_Name: cacti
+  m_TagString: Kaktus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +33,29 @@ Transform:
   - {fileID: 7899158741190436748}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &151233610592429572
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8994201122539481618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.1531019
+  m_Height: 2.3062038
+  m_Direction: 1
+  m_Center: {x: -0.00420022, y: 1.003808, z: 0.0070443153}
 --- !u!1001 &2784639888342570002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 104301851590611458, guid: 56ea867546205a04faeba9296e70f206, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Kaktus
       objectReference: {fileID: 0}
     - target: {fileID: 5420772917658596254, guid: 56ea867546205a04faeba9296e70f206, type: 3}
       propertyPath: m_LocalPosition.x

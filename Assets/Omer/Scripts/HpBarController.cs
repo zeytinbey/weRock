@@ -24,5 +24,21 @@ public class HpBarController : MonoBehaviour
                 hPBar.value = 0;
             }
         }
+        else if (other.gameObject.tag.Equals("Enemy2", StringComparison.Ordinal))
+        {
+            hPBar.value -= 10;
+            if (hPBar.value <= 0)
+            {
+                hPBar.value = 0;
+            }
+        }
+        else if (other.gameObject.tag.Equals("Kaktus", StringComparison.Ordinal))
+        {
+            hPBar.value -= 1;
+            if (hPBar.value <= 0)
+            {
+                hPBar.value = 0;
+            }
+        }
     }
 }

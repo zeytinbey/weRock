@@ -64,6 +64,8 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
         public float ExplosionImpulse = 20f; // Dilediðiniz þiddet deðeri
         [Header("Explosion/Enemy2 Hit Settings")]
         public float ExplosionImpulse2 = 40f; // Dilediðiniz þiddet deðeri
+        [Header("Explosion/Kaktus Hit Settings")]
+        public float ExplosionImpulse3 = 20f; // Dilediðiniz þiddet deðeri
 
 
         [Header("Stable Movement")]
@@ -742,7 +744,21 @@ namespace KinematicCharacterController.Walkthrough.ClimbingLadders
                 AddVelocity(pushDirection * impulse);
                 Debug.Log("Enemy çarpýþmasý: Uygulanan impulse = " + (pushDirection * impulse));
             }
+           
+            if (hitCollider.CompareTag("Kaktus"))
+            {
+                // Ground solving’i geçici kapatýn
+                _controlsDisabled = true;
+                _controlsDisabledUntil = Time.time + 1f;
+                Debug.Log("Kaktus çarpmasý: Kontroller 1 saniyeliðine devre dýþý býrakýldý.");
 
+                Motor.ForceUnground(0.5f);  // ForceUnground süresini de artýrýn
+
+                Vector3 pushDirection = (hitNormal).normalized;
+                float impulse = ExplosionImpulse;
+                AddVelocity(pushDirection * impulse);
+                Debug.Log("Kaktus çarpýþmasý: Uygulanan impulse = " + (pushDirection * impulse));
+            }
 
             switch (CurrentCharacterState)
             {
