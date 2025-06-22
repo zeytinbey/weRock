@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4491608382241212093}
   - component: {fileID: 3257356859650654036}
   - component: {fileID: 3123400005752943225}
+  - component: {fileID: 3507771919097585826}
   m_Layer: 0
   m_Name: GLTFNode_0
   m_TagString: Untagged
@@ -86,6 +87,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3507771919097585826
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032670772890974573}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 81fd1a814f721dc408487607bf832fa5, type: 2}
 --- !u!1 &8649632600175268948
 GameObject:
   m_ObjectHideFlags: 0
