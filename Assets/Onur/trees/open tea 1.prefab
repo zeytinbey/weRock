@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2473447271196468983}
   - component: {fileID: 1141713780615475233}
   - component: {fileID: 6519474984459355892}
+  - component: {fileID: 8698442756057167443}
   m_Layer: 0
   m_Name: open tea 1
   m_TagString: Kaktus
@@ -109,3 +110,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e9651e9ff121f2541984852c93254ce0, type: 2}
+--- !u!65 &8698442756057167443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4500796170164646236}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.6925552, y: 3.180428, z: 1.0226531}
+  m_Center: {x: 0.00030601025, y: 1.3745861, z: -0.04555075}
