@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 4268912317784117929}
   - component: {fileID: 5807624424900557347}
   - component: {fileID: 4119028164983487836}
+  - component: {fileID: 1628483717856427999}
   m_Layer: 0
   m_Name: Mesh_0
   m_TagString: Collectible
@@ -154,3 +155,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178023d1c947d424eb7fa5b81517bb29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1628483717856427999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777744785937517323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b62c40fb68b53429452f05938c836f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vaseCountText: {fileID: 0}

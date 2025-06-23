@@ -6861,6 +6861,7 @@ GameObject:
   - component: {fileID: 813830177}
   - component: {fileID: 813830179}
   - component: {fileID: 813830180}
+  - component: {fileID: 813830181}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -6927,6 +6928,22 @@ MonoBehaviour:
   crackBelow80: {fileID: 1853193117}
   crackBelow60: {fileID: 390216985}
   crackBelow40: {fileID: 1683702844}
+--- !u!114 &813830181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813830176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7236c615fbb65c74e884a1bbcc0f441f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSlot: 1
+  currentData:
+    sceneBuildIndex: 0
+    vaseCount: 0
 --- !u!1 &814676416 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2805050016061879719, guid: 815336d5991629e459715feab9a9ea6d, type: 3}
@@ -19078,6 +19095,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2298895354519046380, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2355594701473507750, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2355594701473507750, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2355594701473507750, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3952249951023640437, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -19158,12 +19191,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6216298335454962334, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8056430051062631110, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8056430051062631110, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8282077614404894190, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8282077614404894190, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8917422664286427620, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9168876303648146835, guid: e68c7d483bdac094bb3f117830d6e9c5, type: 3}
