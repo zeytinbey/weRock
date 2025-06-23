@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9cb154403d0524c80c40030d0d3bac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotIndex: 1
+  slotIndex: 2
   labelText: {fileID: 801743423}
 --- !u!114 &322827363
 MonoBehaviour:
@@ -1435,7 +1435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotIndex: 2
-  labelText: {fileID: 0}
+  labelText: {fileID: 2067775353}
 --- !u!1 &634549580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,7 +1665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotIndex: 3
-  labelText: {fileID: 0}
+  labelText: {fileID: 664787768}
 --- !u!1 &664787766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2310,7 +2310,7 @@ GameObject:
   - component: {fileID: 1658421876}
   - component: {fileID: 1658421875}
   m_Layer: 5
-  m_Name: Delete1 (2)
+  m_Name: Delete3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2348,7 +2348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9cb154403d0524c80c40030d0d3bac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotIndex: 1
+  slotIndex: 3
   labelText: {fileID: 350983359}
 --- !u!114 &1658421876
 MonoBehaviour:
@@ -4896,15 +4896,15 @@ RectTransform:
   - {fileID: 1701240461}
   - {fileID: 4713840496108901828}
   - {fileID: 8663165847784672724}
+  - {fileID: 3946581895322489968}
   - {fileID: 2079796593}
   - {fileID: 2054881773}
-  - {fileID: 3946581895322489968}
+  - {fileID: 401685154}
   - {fileID: 580951374}
   - {fileID: 322827361}
-  - {fileID: 401685154}
+  - {fileID: 516840862}
   - {fileID: 634549581}
   - {fileID: 1658421874}
-  - {fileID: 516840862}
   m_Father: {fileID: 8454489834926406408}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
