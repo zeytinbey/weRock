@@ -10,6 +10,7 @@ TagManager:
   - Enemy2
   - Kaktus
   - Br
+  - Tile
   layers:
   - Default
   - TransparentFX
