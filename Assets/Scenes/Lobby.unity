@@ -15104,6 +15104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mizzzrak
       objectReference: {fileID: 0}
+    - target: {fileID: 26151291612043803, guid: e48bed27f74b4614d82207efc18d9bc3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9020015914719741553, guid: e48bed27f74b4614d82207efc18d9bc3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.9
@@ -33266,6 +33270,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: kuba
       objectReference: {fileID: 0}
+    - target: {fileID: 4181348207631052928, guid: ae20dda872c2e48409ca9c3cd1ea225a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4469523391132756897, guid: ae20dda872c2e48409ca9c3cd1ea225a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.28
@@ -34803,6 +34811,10 @@ PrefabInstance:
     - target: {fileID: 3261525726932227267, guid: e53c87b0c60df97499b9c10f0b99e75a, type: 3}
       propertyPath: m_Name
       value: at
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261525726932227267, guid: e53c87b0c60df97499b9c10f0b99e75a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6212227127661923472, guid: e53c87b0c60df97499b9c10f0b99e75a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37413,6 +37425,10 @@ PrefabInstance:
     - target: {fileID: 7195502411932204251, guid: 84e12ef6d663d1f4690a2bfdce895372, type: 3}
       propertyPath: m_Name
       value: helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195502411932204251, guid: 84e12ef6d663d1f4690a2bfdce895372, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41259,6 +41275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: british
       objectReference: {fileID: 0}
+    - target: {fileID: 289489990607539128, guid: 608853236758e7a47accfa67e785a451, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1835529577761588094, guid: 608853236758e7a47accfa67e785a451, type: 3}
       propertyPath: m_LocalPosition.x
       value: 72
@@ -45076,6 +45096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tac
       objectReference: {fileID: 0}
+    - target: {fileID: 6315510830282892624, guid: 6daa0c9d46cd2e74d8daf8f00d498089, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8730870636017860140, guid: 6daa0c9d46cd2e74d8daf8f00d498089, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.504017
@@ -48249,6 +48273,10 @@ PrefabInstance:
     - target: {fileID: 6862322719946132380, guid: 5a2c5df0bf625214ea98f31c856e9ead, type: 3}
       propertyPath: m_Name
       value: firavun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862322719946132380, guid: 5a2c5df0bf625214ea98f31c856e9ead, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
